@@ -84,9 +84,6 @@ void data_input(int &start_id, int &end_id)
 
 void BFS(vector<pos> &board, int &start_id, int &end_id)
 {
-	// Your code here.
-	//If you find no solution, print the following
-	//cout << "No solution is possible" << endl;
 
 	queue<int> q; //BFS uses queue
 	q.push(board[start_id].id); 
@@ -120,9 +117,6 @@ void BFS(vector<pos> &board, int &start_id, int &end_id)
 
 void DFS(vector<pos> &board, int &start_id, int &end_id)
 {
-	// Your code here.
-    //If you find no solution, print the following
-    //cout << "No solution is possible" << endl;
 
 	stack<int> s;  //the same with BFS, but DFS uses stack
 	s.push(start_id);
@@ -156,9 +150,7 @@ void DFS(vector<pos> &board, int &start_id, int &end_id)
 
 void print_path(vector<pos> &board, int k)
 {
-	//In both DFS and BFS, when the target postion is reached, this function will be called.
-
-	//Your code
+	
 
 	vector<char>xAxis = { 'a','b','c','d','e','f','g','h' };
 	vector<char>yAxis = { '1','2','3','4','5','6','7','8' };
